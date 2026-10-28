@@ -125,7 +125,7 @@ function buildPlaylist() {
 
      if(mode == quickPlay)
      {
-        song = 
+        song = allSongs.slice(0,3)
      }
      else if(fullSession)
      {
