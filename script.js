@@ -119,6 +119,18 @@ function buildPlaylist() {
         the mode
      ===================================================== */
 
+     const mode = modeSelector.value;
+
+     let song;
+
+     if(mode == quickPlay)
+     {
+        song = 
+     }
+     else if(fullSession)
+     {
+        song = allSongs;
+     }
 
 
   /* =====================================================
@@ -164,7 +176,20 @@ function buildPlaylist() {
 
      YOUR CODE GOES HERE:
      ===================================================== */
+    songsRemovedCount = 0;
+    milestone = '';
 
+    if(songsRemovedCount.length == 0)
+    {
+      feedback.textContent = "no songs found";
+      feedback.className = "feedback-box error";
+    }
+    else
+    {
+      feedback.textContent = songsRemovedCount;
+      feedback.className = "feedback-box success";
+    }
+    
 
 
   /* =====================================================
@@ -181,7 +206,13 @@ function buildPlaylist() {
 
      YOUR CODE GOES HERE:
      ===================================================== */
+    let songCount = song.length;
 
+    while(songCount > 0)
+    {
+      songs[songCount];
+      songCount--;
+    }
 
 
     /* =====================================================
